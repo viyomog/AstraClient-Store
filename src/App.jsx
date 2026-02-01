@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Analytics } from "@vercel/analytics/react";
 import { ShoppingBag, Star, Lock, ArrowRight } from 'lucide-react';
 
 export default function App() {
@@ -104,6 +105,7 @@ export default function App() {
       <footer className="absolute bottom-8 text-[var(--text-1)] text-sm opacity-60">
         &copy; 2026 AstraClient. All Rights Reserved.
       </footer>
+      <Analytics />
     </div >
   );
 }
